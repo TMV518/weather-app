@@ -1,0 +1,12 @@
+h4 {
+  display: inline-block;
+  text-align: center;
+  font-size: 30px;
+  margin: 5px 0px;
+}
+
+.image-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}

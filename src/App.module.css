@@ -1,0 +1,73 @@
+.app-wrapper {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  min-width: 600px;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.main-interface {
+  display: flex;
+  flex-direction: column;
+  text-shadow: 2px 2px black;
+}
+
+.main-interface h1,
+.main-interface h2,
+.main-interface h3 {
+  text-align: center;
+  margin-bottom: 7px;
+  margin-top: 7px;
+}
+
+.main-interface,
+.search-bar {
+  margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0.233);
+  color: white;
+}
+
+.search-bar {
+  text-align: center;
+  padding: 5px 0px;
+}
+
+.search-bar input {
+  border: none;
+  border-bottom: 1px solid white;
+  width: 75%;
+  font-size: larger;
+  font-weight: normal;
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.search-bar input::placeholder {
+  color: white;
+}
+
+.mid-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.background {
+  background-image: url("./assets/sunset.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  z-index: 0;
+  filter: brightness(80%);
+}
+
+.error-message {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.233);
+  color: white;
+  text-shadow: 2px 2px black;
+  margin-top: 40px;
+}
