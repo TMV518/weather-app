@@ -93,7 +93,6 @@ function App() {
             onKeyPress={search}
           />
         </Card>
-
         {typeof weather.main !== "undefined" && !error ? (
           <Card className={classes["main-interface"]}>
             <div className={classes["top-row"]}>
@@ -110,7 +109,10 @@ function App() {
         ) : (
           <Card className={classes["error-message"]}>{error}</Card>
         )}
-        <p>Made using the OpenWeatherMap API https://openweathermap.org/</p>
+        <span className={classes.footer}>
+          Made using the OpenWeatherMap API <span> </span>
+          <a href="https://openweathermap.org">openweathermap.org</a>
+        </span>
       </div>
 
       <div className={classes.background}></div>
