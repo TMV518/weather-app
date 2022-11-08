@@ -110,8 +110,9 @@ function App() {
         ) : (
           <Card className={classes["error-message"]}>{error}</Card>
         )}
+        <p>Made using the OpenWeatherMap API https://openweathermap.org/</p>
       </div>
-      <p>Made using the OpenWeatherMap API https://openweathermap.org/</p>
+
       <div className={classes.background}></div>
     </>
   );
